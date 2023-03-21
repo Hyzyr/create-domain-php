@@ -1,5 +1,5 @@
 <?php
-$assetsFolder = '../public/assets/';
+$assetsFolder = '../../public/assets/';
 $name = 'Smash22.arb';
 ?>
 
