@@ -83,12 +83,12 @@
   letter-spacing: -0.02em;
   text-decoration: none;
   transition: 0.2s;
+  background: transparent;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
-
 .button {
   cursor: pointer;
   display: inline-flex;
@@ -107,13 +107,17 @@
   line-height: 1em;
   letter-spacing: -0.02em;
   text-decoration: none;
+  text-align: center;
 
   &--primary {
     position: relative;
-    color: $white;
     transition-delay: 0.2s;
     z-index: 0;
     padding: 0;
+
+    //font
+    color: $white;
+    text-transform: capitalize;
 
     span {
       background: $gradient-1-reverse;
@@ -159,7 +163,8 @@
       animation: glowing 20s linear infinite;
     }
 
-    &:hover {
+    &:hover,
+    &.animated {
       opacity: 1;
       span {
         box-shadow: inset 0 0 1px 1px rgba($white, 0.6);
@@ -193,6 +198,11 @@
         &:before {
           opacity: 1;
         }
+      }
+    }
+    &.color--green {
+      span {
+        background: $gradient-green;
       }
     }
   }
@@ -230,6 +240,7 @@
     }
     // bac
   }
+
   &._select {
     position: relative;
     min-width: 210px;
@@ -349,6 +360,28 @@
     box-shadow: inset -5px -10px 20px rgba($magenta, 0.26);
   }
 }
+.glow {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 250px 150px $magenta;
+  -webkit-appearance: none;
+
+  &--blue {
+    box-shadow: 0 0 250px 150px $color-3;
+  }
+  &__outer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
 .gradientTitle {
   //font
   color: $white;
@@ -360,5 +393,130 @@
 
   span {
     @include textGradient($gradient-light);
+  }
+}
+.gradientText {
+  margin-bottom: 0.6em;
+
+  &--primary {
+    span {
+      @include textGradient($gradient-light);
+    }
+  }
+  &--secondary {
+    span {
+      @include textGradient($gradient-eth);
+    }
+  }
+}
+.custIco {
+  position: relative;
+  width: 1em;
+  height: 1em;
+
+  &--rightArr {
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 50%;
+      right: 0;
+      width: 0.3em;
+      height: 0.3em;
+      border-top: 3px solid currentColor;
+      border-right: 3px solid currentColor;
+      z-index: 1;
+      transform: translate(-50%, -50%) rotate(45deg);
+      transition: 0.2s ease;
+    }
+  }
+}
+.videoContainer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 65%;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba($main, 0.4);
+
+  &__poster {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    z-index: 1;
+    transition: 0.4s ease-in-out;
+    img {
+      @include fullImage;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      height: 90%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 2px 25px rgba($white, 0.2);
+      animation-name: posterAnimation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+  &.active {
+    .videoContainer__poster {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.copyBox {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  z-index: 0;
+
+  &__text {
+    display: flex;
+    align-items: center;
+    font-size: inherit;
+
+    img {
+      width: 1.1em;
+      height: 1.1em;
+      margin-left: 0.4em;
+    }
+  }
+  &__message {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    transition: 0.3s ease-in;
+    padding: 0.5em 0.8em;
+    border-radius: 1em;
+    background: $white;
+
+    //font
+    color: $black-bg;
+    font-family: $font-secondary;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+      bottom: 50%;
+    }
   }
 }

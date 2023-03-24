@@ -37,7 +37,10 @@ const TextEditor = (textField) => {
   };
 };
 
-const editor = TextEditor(document.querySelector("#nameField"));
+const nftBg = document.querySelector("#nftBg");
+const nftFrame = document.querySelector("#nftFrame");
+const nftText = document.querySelector("#nftText");
+const editor = TextEditor(nftText);
 
 const colorBtn = document.querySelector("#colorBtn");
 const italicBtn = document.querySelector("#italicBtn");
@@ -45,6 +48,8 @@ const fontFamily = document.querySelector("#fontFamily");
 const increaseBtn = document.querySelector("#increaseBtn");
 const decreaseBtn = document.querySelector("#decreaseBtn");
 const underlineBtn = document.querySelector("#underlineBtn");
+const bgButtons = document.querySelectorAll("[data-event='changeBg']");
+const frameButtons = document.querySelectorAll("[data-event='changeFrame']");
 
 increaseBtn.onclick = () => editor.increaseFontSize();
 decreaseBtn.onclick = () => editor.decreaseFontSize();
@@ -60,7 +65,7 @@ underlineBtn.onclick = ({ target }) => {
 
 var picker = new Picker({
   parent: colorBtn,
-  color: "white",
+  color: "rgb(209, 230, 93)",
   popup: "bottom",
   onOpen: () => {
     colorBtn.classList.add("active");
@@ -71,4 +76,21 @@ var picker = new Picker({
   onChange: (color) => {
     editor.changeColor(color.rgbaString);
   },
+});
+
+bgButtons.forEach((btn) => {
+  btn.onclick = () => {
+    bgButtons.forEach((item) => item.classList.remove("active"));
+    const img = btn.getAttribute("data-img");
+    nftBg.src = img;
+    btn.classList.add("active");
+  };
+});
+frameButtons.forEach((btn) => {
+  btn.onclick = () => {
+    frameButtons.forEach((item) => item.classList.remove("active"));
+    const img = btn.getAttribute("data-img");
+    nftFrame.src = img;
+    btn.classList.add("active");
+  };
 });

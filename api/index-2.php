@@ -1,6 +1,9 @@
 <?php
-$assetsFolder = '../public/assets/';
-$name = 'Smash22.arb';
+$assetsFolder = '../public/assets';
+$name = isset($_POST['domain']) ? $_POST['domain'] : 'Smash22.arb';
+$img1 = $assetsFolder . '/images/nft-create/backgrounds/bg-black-2.png';
+$img2 = $assetsFolder . '/images/nft-create/backgrounds/bg-white.png';
+$img3 = $assetsFolder . '/images/nft-create/backgrounds/bg-gold.png';
 ?>
 
 <!DOCTYPE html>
@@ -90,62 +93,59 @@ $name = 'Smash22.arb';
                   <strong>Selected Domain Name: </strong>
                   <span>Smash22.arb</span>
                 </div>
-                <div class="createNft__actions-picker">
-                  <h5 class="createNft__actions-title">
-                    <span>Select background</span>
-                  </h5>
-                  <ul class="createNft__actions-picker-items">
-                    <li class="active">
-                      <div class="createNft__img">
-                        <img src="<?php echo $assetsFolder; ?>/images/nft-create/backgrounds/bg-black-2.png" alt="" />
-                      </div>
-                    </li>
-                    <li>
-                      <div class="createNft__img">
-                        <img src="<?php echo $assetsFolder; ?>/images/nft-create/backgrounds/bg-white.png" alt="" />
-                      </div>
-                    </li>
-                    <li>
-                      <div class="createNft__img">
-                        <img src="<?php echo $assetsFolder; ?>/images/nft-create/backgrounds/bg-gold.png" alt="" />
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- <div class="createNft__actions-picker">
-                    <h5 class="createNft__actions-picker-title">
-                      Select Background
+                <div class="createNft__actions-row">
+                  <div class="createNft__actions-picker">
+                    <h5 class="createNft__actions-title">
+                      <span>Select background</span>
                     </h5>
                     <ul class="createNft__actions-picker-items">
-                      <li>
-                        <div class="createNft__img">
-                          <img
-                            src="<?php echo $assetsFolder; ?>/images/nft-create/frames/circles.svg"
-                            class="_small"
-                            alt=""
-                          />
+                      <li class="active" data-event="changeBg" data-img="<?php echo $img1; ?>">
+                        <div class="createNft__img ">
+                          <img src="<?php echo $img1; ?>" alt="bg-1" />
                         </div>
                       </li>
-                      <li>
-                        <div class="createNft__img">
-                          <img
-                            src="<?php echo $assetsFolder; ?>/images/nft-create/frames/squares.svg"
-                            class="_small"
-                            alt=""
-                          />
+                      <li data-event="changeBg" data-img="<?php echo $img2; ?>">
+                        <div class="createNft__img ">
+                          <img src="<?php echo $img2; ?>" alt="bg-2" />
                         </div>
                       </li>
-                      <li>
-                        <div class="createNft__img">
-                          <img
-                            src="<?php echo $assetsFolder; ?>/images/nft-create/frames/hexagon.svg"
-                            class="_small"
-                            alt=""
-                          />
+                      <li data-event="changeBg" data-img="<?php echo $img3; ?>">
+                        <div class="createNft__img ">
+                          <img src="<?php echo $img3; ?>" alt="bg-3" />
                         </div>
                       </li>
                     </ul>
-                  </div> -->
+                  </div>
+                  <div class="createNft__actions-picker">
+                    <h5 class="createNft__actions-title">
+                      <span>Select Frame</span>
+                    </h5>
+                    <ul class="createNft__actions-picker-items">
+                      <li class="active" data-event="changeFrame"
+                        data-img="<?php echo $assetsFolder; ?>/images/nft-create/frames/circles.svg">
+                        <div class="createNft__img">
+                          <img src="<?php echo $assetsFolder; ?>/images/nft-create/frames/circles.svg" class="_small"
+                            alt="" />
+                        </div>
+                      </li>
+                      <li data-event="changeFrame"
+                        data-img="<?php echo $assetsFolder; ?>/images/nft-create/frames/squares.svg">
+                        <div class="createNft__img">
+                          <img src="<?php echo $assetsFolder; ?>/images/nft-create/frames/squares.svg" class="_small"
+                            alt="" />
+                        </div>
+                      </li>
+                      <li data-event="changeFrame"
+                        data-img="<?php echo $assetsFolder; ?>/images/nft-create/frames/hexagon.svg">
+                        <div class="createNft__img">
+                          <img src="<?php echo $assetsFolder; ?>/images/nft-create/frames/hexagon.svg" class="_small"
+                            alt="" />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
                 <h5 class="createNft__actions-title _lg">
                   <span>Select Font & Styles</span>
                 </h5>
@@ -221,15 +221,22 @@ $name = 'Smash22.arb';
           <div class="createNft__inner-banner">
             <div class="createNft__inner-banner-img">
               <div class="createNft__img">
-                <img src="<?php echo $assetsFolder; ?>/images/nft-create/backgrounds/bg-black-2.png" alt="" />
-                <img src="<?php echo $assetsFolder; ?>/images/nft-create/frames/circles.svg" class="_small" alt="" />
-                <div class="createNft__img-text" id='nameField'>
+                <img src="<?php echo $assetsFolder; ?>/images/nft-create/backgrounds/bg-black-2.png" alt=""
+                  id="nftBg" />
+                <img src="<?php echo $assetsFolder; ?>/images/nft-create/frames/circles.svg" class="_small" alt=""
+                  id="nftFrame" />
+                <div class="createNft__img-text" id='nftText'>
                   <?php echo $name; ?>
                 </div>
               </div>
             </div>
-            <div class="button button--primary" id="popupBtn">
-              <span>Convert Domain Name to NFT</span>
+            <div class="createNft__inner-banner-buttons">
+              <div class="button button--primary color--green">
+                <span>Convert Domain Name to NFT</span>
+              </div>
+              <div class="button button--primary">
+                <span>Continue to Buy</span>
+              </div>
             </div>
           </div>
         </div>
