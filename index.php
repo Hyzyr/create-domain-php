@@ -1,11 +1,14 @@
+<?php $assetsFolder = './public/assets/'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>DOMINATOR.DOMAINS | Home</title>
+    <link rel="icon" href="<?php echo $assetsFolder; ?>images/logo-icon.svg">
+    <link rel="stylesheet" href="<?php echo $assetsFolder; ?>/css/main.css" />
+    <title>Web3 Domains on Arbitrum | Dominator.Domains</title>
   </head>
   <body>
     <div class="mainContainer">
@@ -14,12 +17,12 @@
         <div class="autoContainer">
           <div class="headerSection__inner">
             <div class="headerSection__inner-logo">
-              <img src="assets/images/logo.svg" alt="" />
+              <img src="<?php echo $assetsFolder; ?>/images/logo.svg" alt="" />
             </div>
             <div class="headerSection__inner-nav nav" id="menu">
               <div class="nav__inner">
                 <div class="nav__inner-logo">
-                  <img src="assets/images/logo-black.svg" alt="" />
+                  <img src="<?php echo $assetsFolder; ?>/images/logo-black.svg" alt="" />
                 </div>
                 <div class="nav__item _dropdown">
                   Investors
@@ -117,7 +120,7 @@
             <span class="glow moveY"></span>
             <div class="hero__bg-img">
               <img
-                src="assets/images/earth.png"
+                src="<?php echo $assetsFolder; ?>/images/earth.png"
                 alt="bg"
                 class="bubble-transparent"
               />
@@ -132,7 +135,7 @@
             </div>
             <div class="hero__inner-group">
               <div class="hero__inner-banner">
-                <img src="assets/images/cloud.png" alt="" class="network" />
+                <img src="<?php echo $assetsFolder; ?>/images/cloud.png" alt="" class="network" />
               </div>
               <div class="hero__inner-list">
                 <ul>
@@ -140,7 +143,7 @@
                     class="gradientText gradientText--secondary wow animate fadeInUp"
                   >
                     <div class="_ico">
-                      <img src="assets/images/icons/tick-white.svg" alt="🔹" />
+                      <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="🔹" />
                     </div>
                     <span>Instantly Convert Your Domain To NFT</span>
                   </li>
@@ -148,7 +151,7 @@
                     class="gradientText gradientText--secondary wow animate fadeInUp"
                   >
                     <div class="_ico">
-                      <img src="assets/images/icons/tick-white.svg" alt="🔹" />
+                      <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="🔹" />
                     </div>
                     <span>AI Powered Domain Name Suggestions</span>
                   </li>
@@ -156,7 +159,7 @@
                     class="gradientText gradientText--secondary wow animate fadeInUp"
                   >
                     <div class="_ico">
-                      <img src="assets/images/icons/tick-white.svg" alt="🔹" />
+                      <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="🔹" />
                     </div>
                     <span>Multi-Chain web3 Domain Extensions</span>
                   </li>
@@ -164,15 +167,15 @@
               </div>
               <div class="hero__inner-coins">
                 <span class="_arb animate zoomIn" data-wow-delay="0.0s">
-                  <img src="assets/images/coins/arb.png" alt="" />
+                  <img src="<?php echo $assetsFolder; ?>/images/coins/arb.png" alt="" />
                   .arb </span
                 >
                 <span class="_bnb animate zoomIn" data-wow-delay="0.1s">
-                  <img src="assets/images/coins/bnb.png" alt="" />
+                  <img src="<?php echo $assetsFolder; ?>/images/coins/bnb.png" alt="" />
                   .bnb</span
                 >
                 <span class="_eth animate zoomIn" data-wow-delay="0.2s">
-                  <img src="assets/images/coins/eth.png" alt="" />
+                  <img src="<?php echo $assetsFolder; ?>/images/coins/eth.png" alt="" />
                   .eth </span
                 >
                 <span class="_bitcoin animate zoomIn" data-wow-delay="0.3s"
@@ -211,7 +214,7 @@
                   <span>Contract</span>
                   <div class="copyBox__text">
                     <small>0x635d0e13f98e107Cf6C5cDFbF52C19843F87e76a</small>
-                    <img src="assets/images/copy.png" alt="copy" />
+                    <img src="<?php echo $assetsFolder; ?>/images/copy.png" alt="copy" />
                   </div>
                   <div class="copyBox__message">Copied!</div>
                 </div>
@@ -221,10 +224,10 @@
               <h2>Available on</h2>
               <div class="hero__footer-apps-links">
                 <button class="_google">
-                  <img src="assets/images/home/google.png" alt="googles" />
+                  <img src="<?php echo $assetsFolder; ?>/images/home/google.png" alt="googles" />
                 </button>
                 <button class="_apple">
-                  <img src="assets/images/home/apple.png" alt="apples" />
+                  <img src="<?php echo $assetsFolder; ?>/images/home/apple.png" alt="apples" />
                 </button>
                 <div class="hero__footer-apps-tab _google">
                   App Submitted for approval to Google Play Store. Users can
@@ -268,7 +271,7 @@
                 class="integrations__item animate zoomIn active"
                 data-wow-delay="0.0s"
               >
-                <img src="assets/images/coins/coin.png" alt="Coinbase Wallet" />
+                <img src="<?php echo $assetsFolder; ?>/images/coins/coin.png" alt="Coinbase Wallet" />
                 <strong>Coinbase Wallet</strong>
               </div>
               <div
@@ -276,7 +279,7 @@
                 data-wow-delay="0.1s"
               >
                 <img
-                  src="assets/images/coins/coin-1.png"
+                  src="<?php echo $assetsFolder; ?>/images/coins/coin-1.png"
                   alt="Trust WalletTrust Wallet"
                 />
                 <strong>Trust WalletTrust Wallet</strong>
@@ -286,7 +289,7 @@
                 data-wow-delay="0.2s"
               >
                 <img
-                  src="assets/images/coins/coin-2.png"
+                  src="<?php echo $assetsFolder; ?>/images/coins/coin-2.png"
                   alt="Coinbase Wallet"
                 />
                 <strong>Coinbase Wallet</strong>
@@ -295,7 +298,7 @@
                 class="integrations__item animate zoomIn"
                 data-wow-delay="0.3s"
               >
-                <img src="assets/images/coins/coin-3.png" alt="Brave Browser" />
+                <img src="<?php echo $assetsFolder; ?>/images/coins/coin-3.png" alt="Brave Browser" />
                 <strong>Brave Browser</strong>
               </div>
               <div
@@ -303,7 +306,7 @@
                 data-wow-delay="0.4s"
               >
                 <img
-                  src="assets/images/coins/coin-4.png"
+                  src="<?php echo $assetsFolder; ?>/images/coins/coin-4.png"
                   alt="Blockchain.com"
                 />
                 <strong>Blockchain.com</strong>
@@ -312,49 +315,49 @@
                 class="integrations__item animate zoomIn"
                 data-wow-delay="0.5s"
               >
-                <img src="assets/images/coins/coin-5.png" alt="The Graph" />
+                <img src="<?php echo $assetsFolder; ?>/images/coins/coin-5.png" alt="The Graph" />
                 <strong>The Graph</strong>
               </div>
               <div
                 class="integrations__item animate zoomIn"
                 data-wow-delay="0.6s"
               >
-                <img src="assets/images/coins/coin-6.png" alt="Opera Browser" />
+                <img src="<?php echo $assetsFolder; ?>/images/coins/coin-6.png" alt="Opera Browser" />
                 <strong>Opera Browser</strong>
               </div>
               <div
                 class="integrations__item animate zoomIn"
                 data-wow-delay="0.7s"
               >
-                <img src="assets/images/coins/coin-7.png" alt="1inch Wallet" />
+                <img src="<?php echo $assetsFolder; ?>/images/coins/coin-7.png" alt="1inch Wallet" />
                 <strong>1inch Wallet</strong>
               </div>
               <div
                 class="integrations__item animate zoomIn"
                 data-wow-delay="0.8s"
               >
-                <img src="assets/images/coins/coin-8.png" alt="OKX" />
+                <img src="<?php echo $assetsFolder; ?>/images/coins/coin-8.png" alt="OKX" />
                 <strong>OKX</strong>
               </div>
               <div
                 class="integrations__item animate zoomIn"
                 data-wow-delay="0.9s"
               >
-                <img src="assets/images/coins/coin-9.png" alt="Rocket Pool" />
+                <img src="<?php echo $assetsFolder; ?>/images/coins/coin-9.png" alt="Rocket Pool" />
                 <strong>Rocket Pool</strong>
               </div>
               <div
                 class="integrations__item animate zoomIn"
                 data-wow-delay="1.1s"
               >
-                <img src="assets/images/coins/coin-10.png" alt="Cloudflare" />
+                <img src="<?php echo $assetsFolder; ?>/images/coins/coin-10.png" alt="Cloudflare" />
                 <strong>Cloudflare</strong>
               </div>
               <div
                 class="integrations__item animate zoomIn"
                 data-wow-delay="1.11s"
               >
-                <img src="assets/images/coins/coin-11.png" alt="Chainlink" />
+                <img src="<?php echo $assetsFolder; ?>/images/coins/coin-11.png" alt="Chainlink" />
                 <strong>Chainlink</strong>
               </div>
             </div>
@@ -377,7 +380,7 @@
             <div class="videoSection__inner-frame animate fadeInUp">
               <div class="videoContainer" id="playVideo">
                 <div class="videoContainer__poster">
-                  <img src="assets/images/home/video-poster.png" alt="" />
+                  <img src="<?php echo $assetsFolder; ?>/images/home/video-poster.png" alt="" />
                 </div>
                 <iframe
                   width="420"
@@ -459,15 +462,15 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" />
                       </span>
-                      1 Million ONLY
+                      $2 Million ONLY
                     </div>
                   </td>
                   <td>
                     <div class="comparisonTable__box _warning">
                       <span class="_ico2">
-                        <img src="assets/images/icons/cross.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/cross.svg" alt="" />
                       </span>
                       1.5 Billion
                     </div>
@@ -500,15 +503,15 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" />
                       </span>
-                      $200k Thousand ONLY
+                      $1 Million ONLY
                     </div>
                   </td>
                   <td>
                     <div class="comparisonTable__box _warning">
                       <span class="_ico2">
-                        <img src="assets/images/icons/cross.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/cross.svg" alt="" />
                       </span>
                       $350 Million
                     </div>
@@ -541,14 +544,14 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >75% of tokens
                     </div>
                   </td>
                   <td>
                     <div class="comparisonTable__box _warning">
                       <span class="_ico2">
-                        <img src="assets/images/icons/cross.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/cross.svg" alt="" />
                       </span>
 
                       Only 25% of tokens
@@ -581,7 +584,7 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" />
                       </span>
                       Vested for 1 to 2 years
                     </div>
@@ -589,7 +592,7 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >Vested
                     </div>
                   </td>
@@ -621,14 +624,14 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >Yes in ETH
                     </div>
                   </td>
                   <td>
                     <div class="comparisonTable__box _warning">
                       <span class="_ico2">
-                        <img src="assets/images/icons/cross.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/cross.svg" alt="" />
                       </span>
                       No
                     </div>
@@ -661,14 +664,14 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >Yes
                     </div>
                   </td>
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >Yes
                     </div>
                   </td>
@@ -718,7 +721,7 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" />
                       </span>
                       Arbitrum, Ether & Binance Chain
                     </div>
@@ -726,7 +729,7 @@
                   <td>
                     <div class="comparisonTable__box _warning">
                       <span class="_ico2">
-                        <img src="assets/images/icons/cross.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/cross.svg" alt="" />
                       </span>
                       Ether only
                     </div>
@@ -758,14 +761,14 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >Yes
                     </div>
                   </td>
                   <td>
                     <div class="comparisonTable__box _warning">
                       <span class="_ico2">
-                        <img src="assets/images/icons/cross.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/cross.svg" alt="" />
                       </span>
                       No
                     </div>
@@ -798,14 +801,14 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >Yes
                     </div>
                   </td>
                   <td>
                     <div class="comparisonTable__box _warning">
                       <span class="_ico2">
-                        <img src="assets/images/icons/cross.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/cross.svg" alt="" />
                       </span>
                       No
                     </div>
@@ -838,14 +841,14 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >10
                     </div>
                   </td>
                   <td>
                     <div class="comparisonTable__box _warning">
                       <span class="_ico2">
-                        <img src="assets/images/icons/cross.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/cross.svg" alt="" />
                       </span>
                       1
                     </div>
@@ -878,7 +881,7 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" />
                       </span>
                       .arb .eth .bnb .bitcoin .crypto <br />
                       .blockchain .wallet .nft<br />
@@ -888,7 +891,7 @@
                   <td>
                     <div class="comparisonTable__box _warning">
                       <span class="_ico2">
-                        <img src="assets/images/icons/cross.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/cross.svg" alt="" />
                       </span>
                       .eth
                     </div>
@@ -920,14 +923,14 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >175+
                     </div>
                   </td>
                   <td>
                     <div class="comparisonTable__box _warning">
                       <span class="_ico2">
-                        <img src="assets/images/icons/cross.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/cross.svg" alt="" />
                       </span>
                       100+
                     </div>
@@ -960,14 +963,14 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >Yes
                     </div>
                   </td>
                   <td>
                     <div class="comparisonTable__box _warning">
                       <span class="_ico2">
-                        <img src="assets/images/icons/cross.svg" alt="" />
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/cross.svg" alt="" />
                       </span>
                       No
                     </div>
@@ -999,14 +1002,14 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >Yes
                     </div>
                   </td>
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >Yes
                     </div>
                   </td>
@@ -1037,14 +1040,14 @@
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >Yes
                     </div>
                   </td>
                   <td>
                     <div class="comparisonTable__box _success">
                       <span class="_ico2">
-                        <img src="assets/images/icons/tick.svg" alt="" /> </span
+                        <img src="<?php echo $assetsFolder; ?>/images/icons/tick.svg" alt="" /> </span
                       >Yes
                     </div>
                   </td>
@@ -1062,10 +1065,10 @@
             <span class="glow float1"></span>
             <span class="glow float2"></span>
             <div class="highlights__bg-img">
-              <img src="assets/images/home/highlights-bg.png" alt="bg" />
+              <img src="<?php echo $assetsFolder; ?>/images/home/highlights-bg.png" alt="bg" />
             </div>
             <div class="highlights__bg-img">
-              <img src="assets/images/home/highlights.png" alt="bg" />
+              <img src="<?php echo $assetsFolder; ?>/images/home/highlights.png" alt="bg" />
             </div>
           </div>
           <div class="highlights__inner">
@@ -1079,55 +1082,55 @@
               >
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>All Live and Finished Products</span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span> 4096-bit Encrypted Private & <br />Anonymous Tx</span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>Unbreakable zK-Snark Algorithm</span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>ETH Rewards</span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>USDT Rewards</span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>MIniscule MarketCap of 500K</span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>Rug Proof Renounced & Audited Contract</span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>Four Passive Income Streams</span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>Hourly Biggest Buy Rewards</span>
                 </div>
@@ -1139,43 +1142,43 @@
               >
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>Fixed Token Supply</span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>No Team Tokens</span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>Rug-Proof Liquidity Locked</span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>Live NFT Marketplace </span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>Live Swap Platform </span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>Fully Open Source</span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>
                     Decentralized Hosting - No one can shut down the platform
@@ -1183,13 +1186,13 @@
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>Promising Roadmap </span>
                 </div>
                 <div class="highlights__item">
                   <div class="highlights__item-ico">
-                    <img src="assets/images/icons/tick-white.svg" alt="" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/tick-white.svg" alt="" />
                   </div>
                   <span>Competitor Market Cap - $700 Million </span>
                 </div>
@@ -1229,7 +1232,7 @@
               >
                 <div class="dominators__item-img">
                   <img
-                    src="assets/images/nfts/dominant-kong/dominant-kong-1.png"
+                    src="<?php echo $assetsFolder; ?>/images/nfts/dominant-kong/dominant-kong-1.png"
                     alt="nft-image"
                   />
                 </div>
@@ -1248,7 +1251,7 @@
               >
                 <div class="dominators__item-img">
                   <img
-                    src="assets/images/nfts/dominant-kong/dominant-kong-2.png"
+                    src="<?php echo $assetsFolder; ?>/images/nfts/dominant-kong/dominant-kong-2.png"
                     alt="nft-image"
                   />
                 </div>
@@ -1267,7 +1270,7 @@
               >
                 <div class="dominators__item-img">
                   <img
-                    src="assets/images/nfts/dominant-kong/dominant-kong-3.png"
+                    src="<?php echo $assetsFolder; ?>/images/nfts/dominant-kong/dominant-kong-3.png"
                     alt="nft-image"
                   />
                 </div>
@@ -1286,7 +1289,7 @@
               >
                 <div class="dominators__item-img">
                   <img
-                    src="assets/images/nfts/dominant-kong/dominant-kong-4.png"
+                    src="<?php echo $assetsFolder; ?>/images/nfts/dominant-kong/dominant-kong-4.png"
                     alt="nft-image"
                   />
                 </div>
@@ -1305,7 +1308,7 @@
               >
                 <div class="dominators__item-img">
                   <img
-                    src="assets/images/nfts/dominant-kong/dominant-kong-5.png"
+                    src="<?php echo $assetsFolder; ?>/images/nfts/dominant-kong/dominant-kong-5.png"
                     alt="nft-image"
                   />
                 </div>
@@ -1324,7 +1327,7 @@
               >
                 <div class="dominators__item-img">
                   <img
-                    src="assets/images/nfts/dominant-kong/dominant-kong-6.png"
+                    src="<?php echo $assetsFolder; ?>/images/nfts/dominant-kong/dominant-kong-6.png"
                     alt="nft-image"
                   />
                 </div>
@@ -1343,7 +1346,7 @@
               >
                 <div class="dominators__item-img">
                   <img
-                    src="assets/images/nfts/dominant-kong/dominant-kong-7.png"
+                    src="<?php echo $assetsFolder; ?>/images/nfts/dominant-kong/dominant-kong-7.png"
                     alt="nft-image"
                   />
                 </div>
@@ -1362,7 +1365,7 @@
               >
                 <div class="dominators__item-img">
                   <img
-                    src="assets/images/nfts/dominant-kong/dominant-kong-8.png"
+                    src="<?php echo $assetsFolder; ?>/images/nfts/dominant-kong/dominant-kong-8.png"
                     alt="nft-image"
                   />
                 </div>
@@ -1387,7 +1390,7 @@
             <span class="glow"></span>
             <div class="advantages__bg-img">
               <img
-                src="assets/images/home/group-2.png"
+                src="<?php echo $assetsFolder; ?>/images/home/group-2.png"
                 alt="bg"
                 class="bubble-transparent"
               />
@@ -1406,7 +1409,7 @@
               >
                 <div class="advantages__item-img">
                   <img
-                    src="assets/images/icons/advantages/add-profile.svg"
+                    src="<?php echo $assetsFolder; ?>/images/icons/advantages/add-profile.svg"
                     alt="add-profile"
                   />
                 </div>
@@ -1423,7 +1426,7 @@
               >
                 <div class="advantages__item-img">
                   <img
-                    src="assets/images/icons/advantages/get-paid.svg"
+                    src="<?php echo $assetsFolder; ?>/images/icons/advantages/get-paid.svg"
                     alt="get-paid"
                   />
                 </div>
@@ -1439,7 +1442,7 @@
               >
                 <div class="advantages__item-img">
                   <img
-                    src="assets/images/icons/advantages/web3.svg"
+                    src="<?php echo $assetsFolder; ?>/images/icons/advantages/web3.svg"
                     alt="web3"
                   />
                 </div>
@@ -1456,7 +1459,7 @@
               >
                 <div class="advantages__item-img">
                   <img
-                    src="assets/images/icons/advantages/servers.svg"
+                    src="<?php echo $assetsFolder; ?>/images/icons/advantages/servers.svg"
                     alt="servers"
                   />
                 </div>
@@ -1473,7 +1476,7 @@
               >
                 <div class="advantages__item-img">
                   <img
-                    src="assets/images/icons/advantages/security.svg"
+                    src="<?php echo $assetsFolder; ?>/images/icons/advantages/security.svg"
                     alt="security"
                   />
                 </div>
@@ -1490,7 +1493,7 @@
               >
                 <div class="advantages__item-img">
                   <img
-                    src="assets/images/icons/advantages/renewal-fees.svg"
+                    src="<?php echo $assetsFolder; ?>/images/icons/advantages/renewal-fees.svg"
                     alt="renewal-fees"
                   />
                 </div>
@@ -1506,7 +1509,7 @@
               >
                 <div class="advantages__item-img">
                   <img
-                    src="assets/images/icons/advantages/no-fees.svg"
+                    src="<?php echo $assetsFolder; ?>/images/icons/advantages/no-fees.svg"
                     alt="no-fees"
                   />
                 </div>
@@ -1521,7 +1524,7 @@
                 data-wow-duration="0.8"
               >
                 <div class="advantages__item-img">
-                  <img src="assets/images/icons/advantages/usd.svg" alt="usd" />
+                  <img src="<?php echo $assetsFolder; ?>/images/icons/advantages/usd.svg" alt="usd" />
                 </div>
                 <strong>Starting at $5+</strong>
                 <p>
@@ -1535,7 +1538,7 @@
               >
                 <div class="advantages__item-img">
                   <img
-                    src="assets/images/icons/advantages/resold.svg"
+                    src="<?php echo $assetsFolder; ?>/images/icons/advantages/resold.svg"
                     alt="resold"
                   />
                 </div>
@@ -1569,7 +1572,7 @@
             <span class="glow glow--blue"></span>
             <div class="tokenomics__bg-img">
               <img
-                src="assets/images/home/group-1.png"
+                src="<?php echo $assetsFolder; ?>/images/home/group-1.png"
                 alt="bg"
                 class="bubble-transparent animate"
                 data-wow-delay=".2s"
@@ -1585,31 +1588,31 @@
               <ul>
                 <li>
                   <img
-                    src="assets/images/home/ellipsys/ellipsys-0.png"
+                    src="<?php echo $assetsFolder; ?>/images/home/ellipsys/ellipsys-0.png"
                     alt="Ellipse"
                   />
                 </li>
                 <li>
                   <img
-                    src="assets/images/home/ellipsys/ellipsys-1.png"
+                    src="<?php echo $assetsFolder; ?>/images/home/ellipsys/ellipsys-1.png"
                     alt="Ellipse"
                   />
                 </li>
                 <li>
                   <img
-                    src="assets/images/home/ellipsys/ellipsys-2.png"
+                    src="<?php echo $assetsFolder; ?>/images/home/ellipsys/ellipsys-2.png"
                     alt="Ellipse"
                   />
                 </li>
                 <li>
                   <img
-                    src="assets/images/home/ellipsys/ellipsys-3.png"
+                    src="<?php echo $assetsFolder; ?>/images/home/ellipsys/ellipsys-3.png"
                     alt="Ellipse"
                   />
                 </li>
                 <li>
                   <img
-                    src="assets/images/home/ellipsys/ellipsys-4.png"
+                    src="<?php echo $assetsFolder; ?>/images/home/ellipsys/ellipsys-4.png"
                     alt="Ellipse"
                   />
                 </li>
@@ -1624,7 +1627,7 @@
                 <li>
                   <span
                     ><img
-                      src="assets/images/icons/polygons/Polygon 1.svg"
+                      src="<?php echo $assetsFolder; ?>/images/icons/polygons/Polygon 1.svg"
                       alt="polygon"
                     />
                     <small>50%</small>
@@ -1634,7 +1637,7 @@
                 <li>
                   <span
                     ><img
-                      src="assets/images/icons/polygons/Polygon 1-1.svg"
+                      src="<?php echo $assetsFolder; ?>/images/icons/polygons/Polygon 1-1.svg"
                       alt="polygon"
                     />
                     <small>25%</small>
@@ -1644,7 +1647,7 @@
                 <li>
                   <span
                     ><img
-                      src="assets/images/icons/polygons/Polygon 1-2.svg"
+                      src="<?php echo $assetsFolder; ?>/images/icons/polygons/Polygon 1-2.svg"
                       alt="polygon"
                     />
                     <small>10%</small>
@@ -1654,7 +1657,7 @@
                 <li>
                   <span
                     ><img
-                      src="assets/images/icons/polygons/Polygon 1-3.svg"
+                      src="<?php echo $assetsFolder; ?>/images/icons/polygons/Polygon 1-3.svg"
                       alt="polygon"
                     />
                     <small>10%</small>
@@ -1664,7 +1667,7 @@
                 <li>
                   <span>
                     <img
-                      src="assets/images/icons/polygons/Polygon 1-4.svg"
+                      src="<?php echo $assetsFolder; ?>/images/icons/polygons/Polygon 1-4.svg"
                       alt="polygon"
                     />
                     <small>5%</small>
@@ -1684,7 +1687,7 @@
             <span class="glow"></span>
             <span class="glow"></span>
             <div class="roadMap__bg-img">
-              <img src="assets/images/home/roadmap-bg.png" alt="bg" />
+              <img src="<?php echo $assetsFolder; ?>/images/home/roadmap-bg.png" alt="bg" />
             </div>
           </div>
           <div class="roadMap__inner">
@@ -1705,50 +1708,50 @@
                     >
                   </div>
                   <div class="roadMap__item-header-dot">
-                    <img src="assets/images/home/x-octagon.png" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/home/x-octagon.png" alt="icon" />
                   </div>
                 </div>
                 <ul class="roadMap__item-list">
                   <li>
-                    <img src="assets/images/icons/check.svg" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/check.svg" alt="icon" />
                     <span
                       >Protocol Launch on Arbitrum, Ether & Binance chain</span
                     >
                   </li>
                   <li>
-                    <img src="assets/images/icons/check.svg" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/check.svg" alt="icon" />
                     <span>NFT Marketplace Launch</span>
                   </li>
                   <li>
-                    <img src="assets/images/icons/check.svg" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/check.svg" alt="icon" />
                     <span>Audit Contract </span>
                   </li>
                   <li>
-                    <img src="assets/images/icons/check.svg" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/check.svg" alt="icon" />
                     <span>Social Media Campaign </span>
                   </li>
                   <li>
-                    <img src="assets/images/icons/check.svg" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/check.svg" alt="icon" />
                     <span>Influencer Campaign </span>
                   </li>
                   <li>
-                    <img src="assets/images/icons/check.svg" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/check.svg" alt="icon" />
                     <span>Launch Pad Campaign </span>
                   </li>
                   <li>
-                    <img src="assets/images/icons/check.svg" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/check.svg" alt="icon" />
                     <span>Private Sale </span>
                   </li>
                   <li>
-                    <img src="assets/images/icons/check.svg" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/check.svg" alt="icon" />
                     <span>LIVE Mobile Apps(Android) </span>
                   </li>
                   <li>
-                    <img src="assets/images/icons/check.svg" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/check.svg" alt="icon" />
                     <span>Coinmarketcap Pre Listing</span>
                   </li>
                   <li>
-                    <img src="assets/images/icons/check.svg" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/icons/check.svg" alt="icon" />
                     <span>Coingecko Pre Listing</span>
                   </li>
                 </ul>
@@ -1766,7 +1769,7 @@
                     >
                   </div>
                   <div class="roadMap__item-header-dot">
-                    <img src="assets/images/home/x-octagon.png" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/home/x-octagon.png" alt="icon" />
                   </div>
                 </div>
                 <ul class="roadMap__item-list">
@@ -1794,7 +1797,7 @@
                     >
                   </div>
                   <div class="roadMap__item-header-dot">
-                    <img src="assets/images/home/x-octagon.png" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/home/x-octagon.png" alt="icon" />
                   </div>
                 </div>
                 <ul class="roadMap__item-list">
@@ -1819,7 +1822,7 @@
                     </span>
                   </div>
                   <div class="roadMap__item-header-dot">
-                    <img src="assets/images/home/x-octagon.png" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/home/x-octagon.png" alt="icon" />
                   </div>
                 </div>
                 <ul class="roadMap__item-list">
@@ -1844,7 +1847,7 @@
                     </span>
                   </div>
                   <div class="roadMap__item-header-dot">
-                    <img src="assets/images/home/x-octagon.png" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/home/x-octagon.png" alt="icon" />
                   </div>
                 </div>
                 <ul class="roadMap__item-list">
@@ -1865,7 +1868,7 @@
                     <span>Q1 <br />2024</span>
                   </div>
                   <div class="roadMap__item-header-dot">
-                    <img src="assets/images/home/x-octagon.png" alt="icon" />
+                    <img src="<?php echo $assetsFolder; ?>/images/home/x-octagon.png" alt="icon" />
                   </div>
                 </div>
                 <ul class="roadMap__item-list">
@@ -1890,13 +1893,13 @@
             </h3>
             <div class="platforms__inner-row">
               <div class="platforms__inner-item">
-                <img src="assets/images/platforms/image 5.png" alt="partner" />
+                <img src="<?php echo $assetsFolder; ?>/images/platforms/image 5.png" alt="partner" />
               </div>
               <div class="platforms__inner-item">
-                <img src="assets/images/platforms/image 6.png" alt="partner" />
+                <img src="<?php echo $assetsFolder; ?>/images/platforms/image 6.png" alt="partner" />
               </div>
               <div class="platforms__inner-item">
-                <img src="assets/images/platforms/image 7.png" alt="partner" />
+                <img src="<?php echo $assetsFolder; ?>/images/platforms/image 7.png" alt="partner" />
               </div>
             </div>
           </div>
@@ -1916,7 +1919,7 @@
                   class="animate rotateIn"
                   data-wow-delay="0.23s"
                   data-wow-duration="0.3s"
-                  src="assets/images/partners/metamask.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/metamask.png"
                   alt="metamask"
                 />
               </a>
@@ -1925,7 +1928,7 @@
                   class="animate rotateIn"
                   data-wow-delay="0.25s"
                   data-wow-duration="0.5s"
-                  src="assets/images/partners/arbiscan.svg"
+                  src="<?php echo $assetsFolder; ?>/images/partners/arbiscan.svg"
                   alt="arbiscan"
                 />
               </a>
@@ -1934,7 +1937,7 @@
                   class="animate rotateIn"
                   data-wow-delay="0.27s"
                   data-wow-duration="0.7s"
-                  src="assets/images/partners/coinmarketcap.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/coinmarketcap.png"
                   alt="coinmarketcap"
                 />
               </a>
@@ -1943,7 +1946,7 @@
                   class="animate rotateIn"
                   data-wow-delay="0.29s"
                   data-wow-duration="0.9s"
-                  src="assets/images/partners/coingecko.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/coingecko.png"
                   alt="coingecko"
                 />
               </a>
@@ -1952,7 +1955,7 @@
                   class="animate rotateIn"
                   data-wow-delay="1s"
                   data-wow-duration="1.1s"
-                  src="assets/images/partners/uniswap.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/uniswap.png"
                   alt="uniswap"
                 />
               </a>
@@ -1964,7 +1967,7 @@
                   class="animate rotateIn"
                   data-wow-delay="1.1s"
                   data-wow-duration="1.2s"
-                  src="assets/images/partners/dextools.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/dextools.png"
                   alt="dextools"
                 />
               </a>
@@ -1973,7 +1976,7 @@
                   class="animate rotateIn"
                   data-wow-delay="1.1s"
                   data-wow-duration="1.2s"
-                  src="assets/images/partners/auditace.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/auditace.png"
                   alt="auditace"
                 />
               </a>
@@ -1982,7 +1985,7 @@
                   class="animate rotateIn"
                   data-wow-delay="1.2s"
                   data-wow-duration="1.3s"
-                  src="assets/images/partners/dexscreener.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/dexscreener.png"
                   alt="dexscreener"
                 />
               </a>
@@ -2004,7 +2007,7 @@
                   class="animate rotateIn"
                   data-wow-delay="0.23s"
                   data-wow-duration="0.3s"
-                  src="assets/images/partners/metamask.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/metamask.png"
                   alt="metamask"
                 />
               </a>
@@ -2013,7 +2016,7 @@
                   class="animate rotateIn"
                   data-wow-delay="0.25s"
                   data-wow-duration="0.5s"
-                  src="assets/images/partners/arbiscan.svg"
+                  src="<?php echo $assetsFolder; ?>/images/partners/arbiscan.svg"
                   alt="arbiscan"
                 />
               </a>
@@ -2022,7 +2025,7 @@
                   class="animate rotateIn"
                   data-wow-delay="0.27s"
                   data-wow-duration="0.7s"
-                  src="assets/images/partners/coinmarketcap.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/coinmarketcap.png"
                   alt="coinmarketcap"
                 />
               </a>
@@ -2031,7 +2034,7 @@
                   class="animate rotateIn"
                   data-wow-delay="0.29s"
                   data-wow-duration="0.9s"
-                  src="assets/images/partners/coingecko.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/coingecko.png"
                   alt="coingecko"
                 />
               </a>
@@ -2040,7 +2043,7 @@
                   class="animate rotateIn"
                   data-wow-delay="1s"
                   data-wow-duration="1.1s"
-                  src="assets/images/partners/uniswap.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/uniswap.png"
                   alt="uniswap"
                 />
               </a>
@@ -2052,7 +2055,7 @@
                   class="animate rotateIn"
                   data-wow-delay="1.1s"
                   data-wow-duration="1.2s"
-                  src="assets/images/partners/dextools.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/dextools.png"
                   alt="dextools"
                 />
               </a>
@@ -2061,7 +2064,7 @@
                   class="animate rotateIn"
                   data-wow-delay="1.1s"
                   data-wow-duration="1.2s"
-                  src="assets/images/partners/auditace.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/auditace.png"
                   alt="auditace"
                 />
               </a>
@@ -2070,7 +2073,7 @@
                   class="animate rotateIn"
                   data-wow-delay="1.2s"
                   data-wow-duration="1.3s"
-                  src="assets/images/partners/dexscreener.png"
+                  src="<?php echo $assetsFolder; ?>/images/partners/dexscreener.png"
                   alt="dexscreener"
                 />
               </a>
@@ -2086,7 +2089,7 @@
             <span class="glow"></span>
             <span class="glow"></span>
             <div class="team__bg-img rockit">
-              <img src="assets/images/home/team-bg.png" alt="bg" />
+              <img src="<?php echo $assetsFolder; ?>/images/home/team-bg.png" alt="bg" />
             </div>
           </div>
           <div class="team__inner">
@@ -2099,7 +2102,7 @@
               <div class="team__item animate zoomIn" data-wow-duration="1.1s">
                 <div class="team__item-img">
                   <img
-                    src="assets/images/team/1-Devon-Lane.png"
+                    src="<?php echo $assetsFolder; ?>/images/team/1-Devon-Lane.png"
                     alt="Devon Lane"
                   />
                 </div>
@@ -2109,7 +2112,7 @@
               <div class="team__item animate zoomIn" data-wow-duration="1.2s">
                 <div class="team__item-img">
                   <img
-                    src="assets/images/team/2-Albert-Flores.png"
+                    src="<?php echo $assetsFolder; ?>/images/team/2-Albert-Flores.png"
                     alt="Albert Flores"
                   />
                 </div>
@@ -2119,7 +2122,7 @@
               <div class="team__item animate zoomIn" data-wow-duration="1.3s">
                 <div class="team__item-img">
                   <img
-                    src="assets/images/team/3-Eleanor-Pena.png"
+                    src="<?php echo $assetsFolder; ?>/images/team/3-Eleanor-Pena.png"
                     alt="Eleanor Pena"
                   />
                 </div>
@@ -2129,7 +2132,7 @@
               <div class="team__item animate zoomIn" data-wow-duration="1.4s">
                 <div class="team__item-img">
                   <img
-                    src="assets/images/team/4-Leslie-Alexander.png"
+                    src="<?php echo $assetsFolder; ?>/images/team/4-Leslie-Alexander.png"
                     alt="Leslie Alexander"
                   />
                 </div>
@@ -2293,7 +2296,7 @@
         <div class="autoContainer">
           <div class="footerSection__bg">
             <div class="footerSection__bg-img">
-              <img src="assets/images/footer-bg.svg" alt="" />
+              <img src="<?php echo $assetsFolder; ?>/images/footer-bg.svg" alt="" />
             </div>
             <span></span>
             <span></span>
@@ -2305,34 +2308,34 @@
             </div>
             <div class="footerSection__inner-links">
               <a href="#" class="iconButton">
-                <img src="assets/images/icons/git.svg" alt="git" />
+                <img src="<?php echo $assetsFolder; ?>/images/icons/git.svg" alt="git" />
               </a>
               <a
                 href="https://www.youtube.com/channel/UCar7eAlf_-mNxoRw0goJGQw"
                 class="iconButton"
               >
-                <img src="assets/images/icons/youtube.svg" alt="youtube" />
+                <img src="<?php echo $assetsFolder; ?>/images/icons/youtube.svg" alt="youtube" />
               </a>
               <a href="#" class="iconButton">
-                <img src="assets/images/icons/M.svg" alt="M" />
+                <img src="<?php echo $assetsFolder; ?>/images/icons/M.svg" alt="M" />
               </a>
               <a href="#" class="iconButton">
-                <img src="assets/images/icons/reddit.svg" alt="reddit" />
+                <img src="<?php echo $assetsFolder; ?>/images/icons/reddit.svg" alt="reddit" />
               </a>
               <a href="https://t.me/dominatordomains" class="iconButton">
-                <img src="assets/images/icons/telegram.svg" alt="telegram" />
+                <img src="<?php echo $assetsFolder; ?>/images/icons/telegram.svg" alt="telegram" />
               </a>
               <a href="https://twitter.com/DomDomDomains" class="iconButton">
-                <img src="assets/images/icons/twitter.svg" alt="twitter" />
+                <img src="<?php echo $assetsFolder; ?>/images/icons/twitter.svg" alt="twitter" />
               </a>
             </div>
           </div>
         </div>
       </footer>
       <!-- footer end -->
-      <script src="assets/js/wow.js"></script>
-      <script src="assets/js/menu.js"></script>
-      <script src="assets/js/tabs.js"></script>
+      <script src="<?php echo $assetsFolder; ?>/js/wow.js"></script>
+      <script src="<?php echo $assetsFolder; ?>/js/menu.js"></script>
+      <script src="<?php echo $assetsFolder; ?>/js/tabs.js"></script>
       <script>
         const playVideo = document.getElementById("playVideo");
         const showCopyText = (el, isCopied = true) => {

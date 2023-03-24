@@ -1,10 +1,9 @@
 <?php
-  $assetsFolder = '../public/assets';
-  $name = isset($_POST['domain']) ? $_POST['domain'] : 'Smash22.arb';
-  $where = isset($_POST['where']) ? $_POST['where'] : 'ud';
-  $img1 = $assetsFolder . '/images/nft-create/backgrounds/bg-black-2.png';
-  $img2 = $assetsFolder . '/images/nft-create/backgrounds/bg-white.png';
-  $img3 = $assetsFolder . '/images/nft-create/backgrounds/bg-gold.png';
+$assetsFolder = '../public/assets/';
+$name = '';
+if (isset($_POST['domain'])) {
+  $name = $_POST['domain'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,9 +13,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="<?php echo $assetsFolder; ?>/css/main.css" />
-  <link rel="stylesheet" href="<?php echo $assetsFolder; ?>/css/color-picker.css" />
-  <link rel="icon" href="<?php echo $assetsFolder; ?>/images/logo-icon.svg">
+  <link rel="icon" href="<?php echo $assetsFolder; ?>images/logo-icon.svg">
+  <link rel="stylesheet" href="<?php echo $assetsFolder; ?>css/main2.css" />
+  <link rel="stylesheet" href="<?php echo $assetsFolder; ?>css/color-picker.css" />
   <title>DOMINATOR.DOMAINS | Search Domain</title>
 </head>
 
@@ -27,10 +26,10 @@
       <div class="autoContainer">
         <div class="headerSection__inner">
           <div class="headerSection__inner-logo">
-            <img src="<?php echo $assetsFolder; ?>/images/logo.svg" alt="" />
+            <img src="<?php echo $assetsFolder; ?>images/logo.svg" alt="" />
           </div>
           <div class="headerSection__inner-group">
-            <a href="../" class="button button--primary _xlg"><span>Back</span></a>
+            <a href="../index.php" class="button button--primary _xlg"><span>Back</span></a>
             <button class="button button--primary _xlg" id="howMenuBtn">
               <span>How it works</span>
             </button>
@@ -93,61 +92,66 @@
               <div class="createNft__actions">
                 <div class="createNft__actions-info">
                   <strong>Selected Domain Name: </strong>
-                  <span><?php echo $name; ?></span>
+                  <span>
+                    <?php echo $name; ?>
+                  </span>
                 </div>
-                <div class="createNft__actions-row">
-                  <div class="createNft__actions-picker">
-                    <h5 class="createNft__actions-title">
-                      <span>Select background</span>
+                <div class="createNft__actions-picker">
+                  <h5 class="createNft__actions-title">
+                    <span>Select background</span>
+                  </h5>
+                  <ul class="createNft__actions-picker-items">
+                    <li class="active">
+                      <div class="createNft__img">
+                        <img src="<?php echo $assetsFolder; ?>images/nft-create/backgrounds/bg-black-2.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="createNft__img">
+                        <img src="<?php echo $assetsFolder; ?>images/nft-create/backgrounds/bg-white.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="createNft__img">
+                        <img src="<?php echo $assetsFolder; ?>images/nft-create/backgrounds/bg-gold.png" alt="" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- <div class="createNft__actions-picker">
+                    <h5 class="createNft__actions-picker-title">
+                      Select Background
                     </h5>
                     <ul class="createNft__actions-picker-items">
-                      <li class="active" data-event="changeBg" data-img="<?php echo $img1; ?>">
-                        <div class="createNft__img ">
-                          <img src="<?php echo $img1; ?>" alt="bg-1" />
+                      <li>
+                        <div class="createNft__img">
+                          <img
+                            src="<?php echo $assetsFolder; ?>images/nft-create/frames/circles.svg"
+                            class="_small"
+                            alt=""
+                          />
                         </div>
                       </li>
-                      <li data-event="changeBg" data-img="<?php echo $img2; ?>">
-                        <div class="createNft__img ">
-                          <img src="<?php echo $img2; ?>" alt="bg-2" />
+                      <li>
+                        <div class="createNft__img">
+                          <img
+                            src="<?php echo $assetsFolder; ?>images/nft-create/frames/squares.svg"
+                            class="_small"
+                            alt=""
+                          />
                         </div>
                       </li>
-                      <li data-event="changeBg" data-img="<?php echo $img3; ?>">
-                        <div class="createNft__img ">
-                          <img src="<?php echo $img3; ?>" alt="bg-3" />
+                      <li>
+                        <div class="createNft__img">
+                          <img
+                            src="<?php echo $assetsFolder; ?>images/nft-create/frames/hexagon.svg"
+                            class="_small"
+                            alt=""
+                          />
                         </div>
                       </li>
                     </ul>
-                  </div>
-                  <div class="createNft__actions-picker">
-                    <h5 class="createNft__actions-title">
-                      <span>Select Frame</span>
-                    </h5>
-                    <ul class="createNft__actions-picker-items">
-                      <li class="active" data-event="changeFrame"
-                        data-img="<?php echo $assetsFolder; ?>/images/nft-create/frames/circles.svg">
-                        <div class="createNft__img">
-                          <img src="<?php echo $assetsFolder; ?>/images/nft-create/frames/circles.svg" class="_small"
-                            alt="" />
-                        </div>
-                      </li>
-                      <li data-event="changeFrame"
-                        data-img="<?php echo $assetsFolder; ?>/images/nft-create/frames/squares.svg">
-                        <div class="createNft__img">
-                          <img src="<?php echo $assetsFolder; ?>/images/nft-create/frames/squares.svg" class="_small"
-                            alt="" />
-                        </div>
-                      </li>
-                      <li data-event="changeFrame"
-                        data-img="<?php echo $assetsFolder; ?>/images/nft-create/frames/hexagon.svg">
-                        <div class="createNft__img">
-                          <img src="<?php echo $assetsFolder; ?>/images/nft-create/frames/hexagon.svg" class="_small"
-                            alt="" />
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
+                  </div> -->
                 <h5 class="createNft__actions-title _lg">
                   <span>Select Font & Styles</span>
                 </h5>
@@ -223,24 +227,16 @@
           <div class="createNft__inner-banner">
             <div class="createNft__inner-banner-img">
               <div class="createNft__img">
-                <img src="<?php echo $assetsFolder; ?>/images/nft-create/backgrounds/bg-black-2.png" alt=""
-                  id="nftBg" />
-                <img src="<?php echo $assetsFolder; ?>/images/nft-create/frames/circles.svg" class="_small" alt=""
-                  id="nftFrame" />
-                <div class="createNft__img-text" id='nftText'>
+                <img src="<?php echo $assetsFolder; ?>images/nft-create/backgrounds/bg-black-2.png" alt="" />
+                <img src="<?php echo $assetsFolder; ?>images/nft-create/frames/circles.svg" class="_small" alt="" />
+                <div class="createNft__img-text" id='nameField'>
                   <?php echo $name; ?>
                 </div>
               </div>
             </div>
-            <div class="createNft__inner-banner-buttons">
-              <div class="button button--primary color--green" id="gotoNftBtn" style="width: -webkit-fill-available;">
-                <span>Convert Domain Name to NFT</span>
-              </div>
-              <div class="button button--primary" id="gotoBuyBtn" style="margin-top: 20px;width: -webkit-fill-available;">
-                <span>Continue to Buy</span>
-              </div>
+            <div class="button button--primary" id="popupBtn">
+              <span>Convert Domain Name to NFT</span>
             </div>
-            <canvas id="myCanvas" width="400" height="400" style="display:none;border:1px solid #000000;"></canvas>
           </div>
         </div>
       </div>
@@ -252,7 +248,7 @@
       <div class="autoContainer">
         <div class="footerSection__bg">
           <div class="footerSection__bg-img">
-            <img src="<?php echo $assetsFolder; ?>/images/footer-bg.svg" alt="" />
+            <img src="<?php echo $assetsFolder; ?>images/footer-bg.svg" alt="" />
           </div>
           <span></span>
           <span></span>
@@ -264,46 +260,37 @@
           </div>
           <div class="footerSection__inner-links">
             <a href="#" class="iconButton">
-              <img src="<?php echo $assetsFolder; ?>/images/icons/git.svg" alt="git" />
+              <img src="<?php echo $assetsFolder; ?>images/icons/git.svg" alt="git" />
             </a>
             <a href="#" class="iconButton">
-              <img src="<?php echo $assetsFolder; ?>/images/icons/insta.svg" alt="insta" />
+              <img src="<?php echo $assetsFolder; ?>images/icons/insta.svg" alt="insta" />
             </a>
             <a href="#" class="iconButton">
-              <img src="<?php echo $assetsFolder; ?>/images/icons/M.svg" alt="M" />
+              <img src="<?php echo $assetsFolder; ?>images/icons/M.svg" alt="M" />
             </a>
             <a href="#" class="iconButton">
-              <img src="<?php echo $assetsFolder; ?>/images/icons/reddit.svg" alt="reddit" />
+              <img src="<?php echo $assetsFolder; ?>images/icons/reddit.svg" alt="reddit" />
             </a>
             <a href="#" class="iconButton">
-              <img src="<?php echo $assetsFolder; ?>/images/icons/telegram.svg" alt="telegram" />
+              <img src="<?php echo $assetsFolder; ?>images/icons/telegram.svg" alt="telegram" />
             </a>
             <a href="#" class="iconButton">
-              <img src="<?php echo $assetsFolder; ?>/images/icons/twitter.svg" alt="twitter" />
+              <img src="<?php echo $assetsFolder; ?>images/icons/twitter.svg" alt="twitter" />
             </a>
           </div>
         </div>
       </div>
+      <form name="convertDomainForm">
+        <input type="hidden" name="domain" id="domain" value="<?php echo $name; ?>" />
+      </form>
     </footer>
-    <div style="display:none">
-        <form name="gotoNftForm" enctype="multipart/form-data">
-            <input name="domain" type="hidden" value="<?php echo $name ?>" />
-            <input name="image" type="hidden" value="" />
-        </form>
-        <form name="gotoBuyForm">
-            <input name="searchTerm" type="hidden" value="<?php echo $name ?>" />
-            <input name="query" type="hidden" value="<?php echo $name ?>" />
-        </form>
-        <input id="where" type="hidden" value="<?php echo $where ?>" />
-        <input id="domain" type="hidden" value="<?php echo $name ?>" />
-    </div>
     <!-- footer end -->
     <script src="https://unpkg.com/vanilla-picker@2"></script>
-    <script src="<?php echo $assetsFolder; ?>/js/jquery-3.6.0.min.js"></script>
-    <script src="<?php echo $assetsFolder; ?>/js/menu.js"></script>
-    <script src="<?php echo $assetsFolder; ?>/js/editText.js"></script>
-    <script src="<?php echo $assetsFolder; ?>/js/customSelect.js"></script>
-    <script src="<?php echo $assetsFolder; ?>/js/script1.js"></script>
+    <script src="<?php echo $assetsFolder; ?>js/jquery-3.6.0.min.js"></script>
+    <script src="<?php echo $assetsFolder; ?>js/menu.js"></script>
+    <script src="<?php echo $assetsFolder; ?>js/editText.js"></script>
+    <script src="<?php echo $assetsFolder; ?>js/customSelect.js"></script>
+    <script src="<?php echo $assetsFolder; ?>js/script1.js"></script>
   </div>
 </body>
 

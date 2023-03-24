@@ -96,6 +96,7 @@
       bottom: 52%;
       right: -4%;
       transform: translateY(40%);
+      pointer-events: none;
 
       img {
         width: 100%;
@@ -1275,6 +1276,7 @@
       width: calc(100% - 600px - 60px);
       max-width: 500px;
       transform: translateY(-50%);
+      pointer-events: none;
 
       ul {
         position: relative;

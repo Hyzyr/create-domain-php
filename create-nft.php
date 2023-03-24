@@ -1,5 +1,5 @@
 <?php
-$assetsFolder = '../public/assets';
+$assetsFolder = './public/assets';
 $name = isset($_POST['domain']) ? $_POST['domain'] : 'Smash22.arb';
 $img1 = $assetsFolder . '/images/nft-create/backgrounds/bg-black-2.png';
 $img2 = $assetsFolder . '/images/nft-create/backgrounds/bg-white.png';
